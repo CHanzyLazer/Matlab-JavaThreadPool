@@ -10,6 +10,8 @@ for i=1:20; pool1.submitSystem(['powershell Start-Sleep -Seconds ' num2str(randi
 for i=1:20; pool2.submitSystem(['powershell Start-Sleep -Seconds ' num2str(randi(10))]); end
 waitPools({pool1, pool2});
 
+pool1.shutdown();
+pool2.shutdown();
 %% unload include
 clear;
 javarmpath('include');
