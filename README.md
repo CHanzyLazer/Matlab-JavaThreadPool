@@ -7,7 +7,7 @@
 
 因此可以方便的在 matlab 中并行执行第三方程序，或者提交任务（需要是提交后直接挂起终端的任务，这样 ThreadPool 会自动管理，等有空闲进程的时候自动将排队的任务提交）等等。
 
-相比 matlab 中的 Parallel Computing Toolbox，相应速度更快，占用内存更少，并行数目的设置更加灵活。
+相比 matlab 中的 Parallel Computing Toolbox，响应速度更快，占用内存更少，并行数目的设置更加灵活。
 
 增加了一个实用的 `waitPools(pools)` 方法，可以等待传入的线程池全部执行完成，并且期间会绘制进度条。
 
